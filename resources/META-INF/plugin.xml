@@ -1,7 +1,7 @@
 <idea-plugin>
   <id>com.your.company.unique.plugin.id</id>
   <name>Idea File export</name>
-  <version>1.0</version>
+  <version>1.1</version>
   <vendor email="yege2019@163.com" url="https://github.com/yege2006/idea-file-export">yege2006</vendor>
 
   <description>计划实现类似eclipse中的export文件的功能，
