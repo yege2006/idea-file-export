@@ -1,0 +1,37 @@
+<idea-plugin>
+  <id>com.your.company.unique.plugin.id</id>
+  <name>Idea File export</name>
+  <version>1.0</version>
+  <vendor email="yege2019@163.com" url="https://github.com/yege2006/idea-file-export">yege2006</vendor>
+
+  <description>计划实现类似eclipse中的export文件的功能，
+    主要是给一些有特殊需求比如导出文件目录结构等提供便利
+  </description>
+
+  <change-notes>
+    计划实现类似eclipse中的export文件的功能，
+    主要是给一些有特殊需求比如导出文件目录结构等提供便利
+  </change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="173.0"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+    <action id="FileExportAction" class="com.idosth.file.export.FileExportAction" text="Export"
+            description="Export File">
+      <add-to-group group-id="CutCopyPasteGroup" anchor="last"/>
+    </action>
+  </actions>
+
+</idea-plugin>
