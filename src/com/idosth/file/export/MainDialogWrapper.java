@@ -52,7 +52,14 @@ public class MainDialogWrapper extends JDialog {
         browseBtn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                //添加文件选择器
+                FileChooserDescriptor descriptor = new FileChooserDescriptor(false,true,false,false,false,false);
+                descriptor.setShowFileSystemRoots(true);
+                descriptor.setHideIgnored(true);
+                VirtualFile virtualFile = FileChooser.chooseFile(descriptor,null,null);
+                if (virtualFile.exists()) {
+                    pathEditText.setText(virtualFile.getCanonicalPath());
+                }
             }
         });
 
