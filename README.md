@@ -10,6 +10,10 @@
    <component name="NewModuleRootManager" inherit-compiler-output="true">
  ```
  
- ##2.使用方式
+ ## 2.使用方式
  下载idea-file-export.jar文件，放到idea安装目录的plugins下面重启即可使用。
  右击需要导出的文件，点击Export即可。
+ ---
+ ## 3.TODO
+ - 添加文件列表功能以供勾选
+ - 选中文件夹时默认导出所有子目录文件夹    
